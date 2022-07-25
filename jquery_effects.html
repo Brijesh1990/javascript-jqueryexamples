@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='js/jquery.min.js'></script>
+    <script>
+        jQuery("document").ready(function(){
+            jQuery("#btn").click(function(){
+          
+                   jQuery("#log").hide(4500);
+
+            })
+            jQuery("#btn1").click(function(){
+          
+          jQuery("#log").show(4500);
+
+   })
+   jQuery("#btn2").click(function(){
+          
+          jQuery("#log").toggle(4500);
+
+   })
+        })
+    </script>
+    <style>
+        #log
+        {
+            width: 70%;
+            height: auto;
+            background-color: black;
+            color: white;
+            font-size: 17px;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <button type="button" id="btn">Hide Me</button>
+    <button type="button" id="btn1">Show Me</button>
+    <button type="button" id="btn2">Toggle Me</button>
+    
+    <div id="log">
+      <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rem eligendi cupiditate totam, delectus tempore aliquam ducimus nostrum ullam accusantium quod odio sunt praesentium magni dolorum quos! Nihil, quia. Recusandae.</p>
+    </div>    
+</body>
+</html>
